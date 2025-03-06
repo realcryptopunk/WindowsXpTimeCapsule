@@ -27,7 +27,8 @@ To run the project locally:
    ```bash
    npm start
 
-   🌍 Live Demo
+
+🌍 Live Demo
 
 🔗 Try it online here
 https://vercel.com/realcryptopunks-projects/protype-time-capsule
