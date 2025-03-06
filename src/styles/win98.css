@@ -1,0 +1,199 @@
+@font-face {
+  font-family: 'MS Sans Serif';
+  src: url('https://unpkg.com/win98-pixel-font/ms_sans_serif.woff2') format('woff2');
+}
+
+:root {
+  --win98-gray: #c0c0c0;
+  --win98-gray-light: #dfdfdf;
+  --win98-gray-dark: #808080;
+  --win98-blue: #000080;
+  --win98-blue-light: #1084d0;
+  --win98-text: #000000;
+  --win98-white: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'MS Sans Serif', 'Segoe UI', Tahoma, sans-serif;
+  overflow: hidden;
+  background-color: var(--win98-gray);
+}
+
+.win98-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.win98-desktop {
+  width: 100%;
+  height: calc(100% - 28px);
+  background-color: #008080;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Desktop Icons */
+.desktop-icons {
+  padding: 4px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 64px);
+  gap: 16px;
+}
+
+.desktop-icon {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  font-size: 11px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.desktop-icon:hover {
+  background-color: rgba(0, 0, 255, 0.3);
+}
+
+.desktop-icon.selected {
+  background-color: var(--win98-blue-light);
+}
+
+/* Taskbar */
+.taskbar {
+  height: 28px;
+  background-color: var(--win98-gray);
+  border-top: 1px solid var(--win98-white);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  z-index: 9999;
+}
+
+.start-button {
+  height: 22px;
+  padding: 1px 4px;
+  display: flex;
+  align-items: center;
+  background-color: var(--win98-gray);
+  border: outset 2px white;
+  margin-right: 4px;
+}
+
+.start-button:active {
+  border-style: inset;
+}
+
+.start-button img {
+  width: 16px;
+  height: 16px;
+  margin-right: 2px;
+}
+
+/* Windows */
+.win98-window {
+  position: absolute;
+  background-color: var(--win98-gray);
+  border: outset 2px white;
+  min-width: 200px;
+  min-height: 100px;
+}
+
+.window-titlebar {
+  height: 18px;
+  background-color: var(--win98-blue);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 3px;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.window-controls {
+  display: flex;
+  gap: 2px;
+}
+
+.window-button {
+  width: 16px;
+  height: 14px;
+  background-color: var(--win98-gray);
+  border: outset 1px white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.window-button:active {
+  border-style: inset;
+}
+
+.window-content {
+  padding: 4px;
+  background-color: var(--win98-white);
+  border: inset 2px white;
+}
+
+/* Form Elements */
+.win98-button {
+  background-color: var(--win98-gray);
+  border: outset 2px white;
+  padding: 4px 8px;
+  font-family: 'MS Sans Serif';
+  font-size: 11px;
+  color: black;
+  cursor: pointer;
+}
+
+.win98-button:active {
+  border-style: inset;
+}
+
+.win98-input {
+  border: inset 2px white;
+  background-color: white;
+  padding: 3px;
+  font-family: 'MS Sans Serif';
+  font-size: 11px;
+}
+
+/* Context Menu */
+.context-menu {
+  position: fixed;
+  background-color: var(--win98-gray);
+  border: outset 2px white;
+  padding: 2px;
+  min-width: 120px;
+  z-index: 10000;
+}
+
+.context-menu-item {
+  padding: 4px 20px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.context-menu-item:hover {
+  background-color: var(--win98-blue);
+  color: white;
+}
+
+.context-menu-separator {
+  height: 1px;
+  background-color: var(--win98-gray-dark);
+  margin: 2px 0;
+}
