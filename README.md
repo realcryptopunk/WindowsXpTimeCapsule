@@ -28,12 +28,11 @@ To run the project locally:
    npm start
 
 
-🌍 Live Demo
+# 🌍 Live Demo
+   🔗 Try it online here
+   https://vercel.com/realcryptopunks-projects/protype-time-capsule
 
-🔗 Try it online here
-https://vercel.com/realcryptopunks-projects/protype-time-capsule
-
-📝 License
+# 📝 License
 
 This project is licensed under the MIT License.
 
