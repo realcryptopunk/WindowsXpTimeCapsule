@@ -30,7 +30,8 @@ To run the project locally:
 
 # 🌍 Live Demo
    🔗 Try it online here
-   https://vercel.com/realcryptopunks-projects/protype-time-capsule
+   protype-time-capsule.vercel.app
+
 
 # 📝 License
 
